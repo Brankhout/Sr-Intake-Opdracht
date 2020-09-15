@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Sr-Intake-Opdracht"
+    }
+  },
+  "defaultProject": "Sr-Intake-Opdracht",
+  "cli": {
+    "analytics": "18084bd8-42a2-4fd3-b891-2401f6aee6c6"
+  }
 }
