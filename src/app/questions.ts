@@ -5,11 +5,12 @@ export class Questions {
         questionId: number;
         question: string;
         questionType:'';
-        answer:[{
-            answer: string;
+        answers:[{
+            answer:string;
             answerId: number;
             isCorrect: boolean;
         }]
-
+        userAnswer: null;
     }]
+
 }

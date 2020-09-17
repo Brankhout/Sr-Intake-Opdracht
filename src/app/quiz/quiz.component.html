@@ -1,4 +1,28 @@
-<p>quiz works!</p>
-<button class="btn btn-primary">Submit</button>
+<button (click)="StartQuiz()">Start!</button>
+<div *ngIf="_Started">
+  <div *ngFor="let question of _question">
+    {{question.name}}
+    {{question.introText}}
+    <br>
+    <div class="card-container">
+      <div *ngFor="let questions of question.questions">
+        <div *ngIf="getQuestionid(questions.questionId)">
+          {{questions.question}}
+          <div *ngIf="getQuestionType(questions.questionType); else openAnswer">
+            <div *ngFor="let answer of questions.answers">
+              <input type ="Radio" name="answer">
+              {{answer.answer}}
+            </div>
+          </div>
+          <ng-template #openAnswer>
+            <input #box type="text" name="openAnswer">
+            
+          </ng-template>
+        </div>
+      </div>
+      <button (click)="nextQuestion()">Volgende</button>
 
-<app-results></app-results>
+    </div>
+
+  </div>
+</div>
