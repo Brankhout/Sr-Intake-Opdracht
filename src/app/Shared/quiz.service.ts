@@ -15,7 +15,6 @@ export class QuizService {
   
 
   getQuestions(): Observable<Questions[]>{
-    this.messageService.add('heroService: fetched heroes')
     return this.http.get<Questions[]>(this._url)
     
     
