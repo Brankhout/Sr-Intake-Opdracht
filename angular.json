@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "D:/Github reposetories/Sr-Intake-Opdracht/node_modules/bootstrap/scss/_custom-forms.scss",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
